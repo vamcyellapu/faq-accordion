@@ -1,0 +1,123 @@
+$gradient: linear-gradient(to bottom, #af67e9, #6565e7);
+$heading-active: #1d1e35;
+$heading-hover: #f47c57;
+$heading: #4a4b5e;
+$text: #787887;
+$devide-color: #e7e7e9;
+$white: #fff;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  min-height: 100vh;
+  background: $gradient;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  padding: 2rem;
+}
+.faq {
+  background-color: $white;
+
+  max-width: 90.2rem;
+  margin: 0 auto;
+  border-radius: 25px;
+  position: relative;
+  padding: 3rem 3rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  &__head {
+    text-align: center;
+  }
+  &__heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $heading;
+    text-align: center;
+  }
+  &__img-women {
+    width: 24rem;
+    position: absolute;
+    top: -3%;
+    transform: translateY(-50%);
+    object-fit: cover;
+  }
+  &__img-shadow {
+    position: relative;
+    bottom: 40px;
+    object-fit: cover;
+  }
+  &__body {
+    .qa {
+      border-bottom: 1px solid $devide-color;
+
+      cursor: pointer;
+      .q {
+        font-size: 1.4rem;
+        color: $heading;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        &:hover {
+          color: $heading-hover;
+        }
+      }
+      .a {
+        color: $text;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.hidden .a {
+  display: none;
+}
+.bold {
+  font-weight: 700;
+  color: $heading-active;
+}
+
+@media screen and (min-width: 992px) {
+  .faq {
+    grid-template-columns: 1fr 1fr;
+    &__img-women {
+      left: -5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 45rem;
+    }
+    &__heading {
+      text-align: left;
+    }
+    &__img-shadow {
+      right: 20%;
+      top: 60%;
+
+      width: 50rem;
+    }
+    &__body {
+      margin-top: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}

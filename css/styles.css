@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+}
+
+.faq {
+  background-color: #fff;
+  max-width: 90.2rem;
+  margin: 0 auto;
+  border-radius: 25px;
+  position: relative;
+  padding: 3rem 3rem 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.faq__head {
+  text-align: center;
+}
+
+.faq__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #4a4b5e;
+  text-align: center;
+}
+
+.faq__img-women {
+  width: 24rem;
+  position: absolute;
+  top: -3%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.faq__img-shadow {
+  position: relative;
+  bottom: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.faq__body .qa {
+  border-bottom: 1px solid #e7e7e9;
+  cursor: pointer;
+}
+
+.faq__body .qa .q {
+  font-size: 1.4rem;
+  color: #4a4b5e;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.faq__body .qa .q:hover {
+  color: #f47c57;
+}
+
+.faq__body .qa .a {
+  color: #787887;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hidden .a {
+  display: none;
+}
+
+.bold {
+  font-weight: 700;
+  color: #1d1e35;
+}
+
+@media screen and (min-width: 992px) {
+  .faq {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .faq__img-women {
+    left: -5%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 45rem;
+  }
+  .faq__heading {
+    text-align: left;
+  }
+  .faq__img-shadow {
+    right: 20%;
+    top: 60%;
+    width: 50rem;
+  }
+  .faq__body {
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
