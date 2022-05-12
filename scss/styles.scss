@@ -79,6 +79,9 @@ body {
         &:hover {
           color: $heading-hover;
         }
+        img {
+          transition: transform 0.3s;
+        }
       }
       .a {
         color: $text;
@@ -95,6 +98,10 @@ body {
 .bold {
   font-weight: 700;
   color: $heading-active;
+}
+
+.btn-transform img {
+  transform: rotate(-180deg);
 }
 
 @media screen and (min-width: 992px) {
